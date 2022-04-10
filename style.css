@@ -19,18 +19,16 @@ body, *{
 	padding: auto;
 	max-width: 1440px;
 }
+
+/* HEADER */
 .header_container{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
 	justify-content: space-between;
-	background-color: #000;
 	padding-top: 20px;
-	/* background: url('./img/first.png') no-repeat right center;
-	background-size: cover; */
 }
 .header{
-	background-color: #000;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -109,4 +107,12 @@ body, *{
 }
 #menu:checked ~ .button{
 	display: none;
+}
+/* HEADER */
+
+/* INTRO */
+.intro{
+	height: 100vh;
+	background: url('./img/intro.jpg') no-repeat right center;
+	background-size: cover;
 }
