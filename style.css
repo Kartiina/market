@@ -3,18 +3,28 @@ body, *{
 	margin: 0;
 	padding: 0;
 }
-/* .body{
-    margin: auto;
-} */
-.conteiner{
-    width: 100%;
+.container{
+	width: 100%;
 	height: 100vh;
-	background: url('../img/first.png') no-repeat right center;
+	margin-right: auto;
+	padding: auto;
+}
+.first_page{
+	height: 100vh;
+	background: url('./img/first.png') no-repeat right center;
 	background-size: cover;
     /* max-width: 1600px; */
-	margin: auto;
 }
-.checkbox{
+header{
+	width: 100%;
+	/* height: 80px; */
+	display: flex;
+	align-items: flex-end;
+	position: fixed;
+	top: 0;
+	z-index: 21;
+}
+#menu{
 	display: none;
 }
 .button{
@@ -27,40 +37,54 @@ body, *{
 	border-radius: 50%;
 	background: #fff;
 	position: absolute;
-	top: 20px;
 	right: 20px;
 	cursor: pointer;
+	z-index: 1;
+	/* line-height: 20/px; */
+	transition: 0.5s;
 }
-/* header {
-	display: flex;
-	justify-content: flex-end;
-} */
-
-/* #menu, [for=menu]{
-	display: none;
-} */
-/* #menu, [for=menu], nav, ul{
+.button_line{
 	display: block;
-	position: fixed;
 	width: 30px;
-	text-align: center;
-	right: 20px;
-	top: 10px;
-} */
-/* nav{
-	display: none; почему-то не работает
-} */
-/* ul{
-	display: none;
+	height: 3px;
+	border-radius: 5px;
+	background: #000;
+	margin: 2px 0;
 }
-#menu:checked + label + nav + ul{
+.m_menu{
+	right: 0;
+	position: absolute;
+	width: 30%;
+	max-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 5px 100px;
+	transition: 0.5s all;
+	transform: translateZ(100%);
+}
+.menu_link{
 	display: block;
-} */
-/*@media screen and (max-width: 500px){
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 10px;
+	/* padding: 5px 10px; */
+	/* border-top: 1px solid #fff; */
+	/* transition: all .2s linear; */
+}
+#menu:checked ~ .m_menu{
+	max-height: 200px;
+	font-size: 16px;
+	/* padding: 10px 190px 1px 1px;
+	margin: 90px 180px 20px 100px; */
+	background: rgba(225, 229, 224, 0.893);
+	border-radius:  10px 0 0 10px;
+}
+#menu:checked ~ .button{
+	display: none;
 	
-	 nav{
-		display: none;
-	}#menu:checked + label + nav + ul{
-		display: block;
-	}
-} */
+}
