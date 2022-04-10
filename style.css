@@ -1,64 +1,66 @@
-.body{
-    margin: 0;
+body, *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+/* .body{
+    margin: auto;
+} */
 .conteiner{
     width: 100%;
-    max-width: 1600px;
-
+	height: 100vh;
+	background: url('../img/first.png') no-repeat right center;
+	background-size: cover;
+    /* max-width: 1600px; */
+	margin: auto;
 }
-header {
+.checkbox{
+	display: none;
+}
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+/* header {
 	display: flex;
 	justify-content: flex-end;
-}
-.menu-btn {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	z-index:2;
-	overflow: hidden;
-}
-.menu-btn span {
-	width: 30px;
-	height: 2px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #222222;
-	transition: all 0.5s;
-}
-.menu-btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
-}
-.menu-btn span:nth-of-type(3) {
-	top: calc(50% + 5px);
-}
-.menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 15px;
-  background: #FFEFBA;
-	transform: translateX(-100%);
-	transition: transform 0.5s; 
-}
-.menu.active {
-	transform: translateX(0);
-}
-.menu li {
-	list-style-type: none;
-}
-/* Меняем гамбургер иконку, когда меню открыто */
-.menu-btn.active span:nth-of-type(1) {
+} */
+
+/* #menu, [for=menu]{
 	display: none;
-  }
-  .menu-btn.active span:nth-of-type(2) {
-	top: 50%;
-	transform: translate(-50%, 0%) rotate(45deg);  
-  }
-  .menu-btn.active span:nth-of-type(3) {
-	top: 50%;
-	transform: translate(-50%, 0%) rotate(-45deg); 
-  }
+} */
+/* #menu, [for=menu], nav, ul{
+	display: block;
+	position: fixed;
+	width: 30px;
+	text-align: center;
+	right: 20px;
+	top: 10px;
+} */
+/* nav{
+	display: none; почему-то не работает
+} */
+/* ul{
+	display: none;
+}
+#menu:checked + label + nav + ul{
+	display: block;
+} */
+/*@media screen and (max-width: 500px){
+	
+	 nav{
+		display: none;
+	}#menu:checked + label + nav + ul{
+		display: block;
+	}
+} */
