@@ -52,13 +52,6 @@ img{
 	top: 0;
 	left: 0;
 	width: 100%;
-	
-	/* display: flex;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	z-index: 2;
-	justify-content: space-around; */
 }
 #menu{
 	display: none;
@@ -174,28 +167,29 @@ img{
 
 /* AWARDS */
 .awards{
-	min-width: 1276px;
-	max-height: 227px;
 	margin: 0 auto;
-	margin-right: 0;
 	position: relative;
-	margin-bottom: 120px;
+	z-index: 2;
+	text-align: right;
 }
 .awards_wrap{
+	display: inline-block;
+	min-width: 1276px;
 	width: 100%;
-	position: absolute;
 	display: flex;
 	flex-direction: row;
 	top: 0;
-	left: 0;
 	transform: translateY(-45%);
+	z-index: 2;
 	background-color: #FFFFFF;
 	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
 	border-radius: 2px;
 }
 @media (min-width: 1500px) {
 	.awards{
-		/* margin-left: ; */
+		display: inline-block;
+		float: right;
+		padding-right: 160px;
 		margin-bottom: 107px;
 	}
 }
@@ -209,26 +203,80 @@ img{
 
  /* STRATEGY */
 .strategy{
-	padding-top: 120px;
+	/* padding-top: 120px; */
 }
 .small_comment{
+	max-width: 136px;
 	margin-bottom: 29px;
 }
 .strategy_title{
-	max-width: 475px;
+	max-width: 470px;
 	margin-bottom: 35px;
 }
-.comment{
+mark{
+	color: #4D533C;
+	background: #FFD7231A;
+}
+.subtitle{
 	max-width: 475px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
+	color: #21384299;
+	margin-bottom: 42px;
 }
 .strategy_link{
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
 	text-decoration-line: underline;
 	color: #D4D6D4;
 }
+.strategy_link:before{
+	padding-right: 2px;
+	content: "▸";
+	color: #D4D6D4;
+}
  /* STRATEGY */
+
+ /* first comment */
+ .comment_1{
+	/* margin-right: auto; */
+	position: relative;
+}
+.comment_1_wrap{
+	/* display: ; */
+	margin: 0 0 0 auto;
+	width: 474px;
+	height: 640px;
+	position: relative;
+	transform: translateY(-80%);
+	background-color: #FFFFFF;
+	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+	border-radius: 2px;
+}
+.comment{
+	width: 426px;
+	padding: 230px 4px 0 40px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 40px;
+	color: #4D533C;
+}
+.user{
+	padding: 50px 300px 60px 40px;
+}
+.name_user{
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 33px;
+	padding-right: 76px;
+	/* padding: auto 76px 6px 160px; */
+}
+.description_user{
+	padding: 0px 117px 73px 0px;
+}
+/* сделать медиа запрос */
+
+ /* first comment */
