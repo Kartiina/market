@@ -241,7 +241,6 @@ mark{
 
  /* first comment */
  .comment_1{
-	/* margin-right: auto; */
 	position: relative;
 }
 .comment_1_wrap{
@@ -257,25 +256,32 @@ mark{
 }
 .comment{
 	width: 426px;
-	padding: 230px 4px 0 40px;
+	padding: 190px 4px 0 40px;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 40px;
 	color: #4D533C;
 }
+table{
+	width: 460px;
+}
+th{
+	text-align: left;
+}
 .user{
-	padding: 50px 300px 60px 40px;
+	/* text-align: center; */
+	padding-top: 40px;
+	/* padding: 50px 0px 60px 40px; */
 }
 .name_user{
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 33px;
-	padding-right: 76px;
-	/* padding: auto 76px 6px 160px; */
+	/* padding: 65px 76px 6px 0px; */
 }
 .description_user{
-	padding: 0px 117px 73px 0px;
+	/* padding: 0px 117px 73px 0px; */
 }
 /* сделать медиа запрос */
 
