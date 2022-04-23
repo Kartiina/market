@@ -25,6 +25,7 @@ img{
 .container_full{
 	max-width: 1110px;
 	margin: 0 auto;
+	margin-left: 150px;
 }
 .section_title{
 	font-weight: 700;
@@ -244,7 +245,6 @@ mark{
 	position: relative;
 }
 .comment_1_wrap{
-	/* display: ; */
 	margin: 0 0 0 auto;
 	width: 474px;
 	height: 640px;
@@ -270,7 +270,6 @@ th{
 	text-align: left;
 }
 .user{
-	/* text-align: center; */
 	padding-top: 40px;
 	/* padding: 50px 0px 60px 40px; */
 }
@@ -280,9 +279,24 @@ th{
 	line-height: 33px;
 	/* padding: 65px 76px 6px 0px; */
 }
-.description_user{
-	/* padding: 0px 117px 73px 0px; */
+hr{
+	margin-top: -300px;
 }
 /* сделать медиа запрос */
 
  /* first comment */
+
+ /* third block */
+ .block_wrap{
+	display: flex;
+	flex-direction: row;
+	margin-top: 150px;
+	justify-content: space-between;
+ }
+ .block_title{
+	width: 325px;
+ }
+ .block_comment{
+	width: 520px;
+ }
+ /* third block */
