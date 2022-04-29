@@ -203,9 +203,6 @@ img{
 /* AWARDS */
 
  /* STRATEGY */
-.strategy{
-	/* padding-top: 120px; */
-}
 .small_comment{
 	max-width: 136px;
 	margin-bottom: 29px;
@@ -277,6 +274,7 @@ th{
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 33px;
+	margin-bottom: 4px;
 	/* padding: 65px 76px 6px 0px; */
 }
 hr{
@@ -291,6 +289,7 @@ hr{
 	display: flex;
 	flex-direction: row;
 	margin-top: 150px;
+	margin-bottom: 105px;
 	justify-content: space-between;
  }
  .block_title{
@@ -298,5 +297,44 @@ hr{
  }
  .block_comment{
 	width: 520px;
+	margin-bottom: 5px;
+ }
+ .test{
+	position: relative;
+ }
+ .figure{
+	position: absolute;
+	width: 900px;
+	height: 450px;
+	top: 0px;
+	left: 0px;
+ }
+.wall{
+	padding: 100px 0px 24px 970px;
+}
+.wall_1{
+	width: 420px;
+}
+ .comment_2_wrap{
+	margin: 275px 500px 100px auto;
+	width: 550px;
+	height: 330px;
+	position: relative;
+	transform: translateY(-80%);
+	background-color: #FFFFFF;
+	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+	border-radius: 10px;
+ }
+ .comment_2{
+	width: 450px;
+	font-size: 16px;
+	line-height: 35px;
+	padding: 30px 30px 100px 30px;
+ }
+ .second_user{
+	margin-top: -250px;
+ }
+ .desc_user_2{
+	 margin-bottom: 100px;
  }
  /* third block */
