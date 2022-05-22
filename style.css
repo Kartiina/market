@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;700&display=swap');
 html{
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 *, * ::before, * ::after{
 	box-sizing: inherit;
@@ -22,15 +23,6 @@ img{
 	padding: auto;
 	max-width: 1440px;
 }
-/* @media (max-width: 1110px) {
-	.container{
-		margin: 0 auto;
-	    margin-left: 165px;
-	}
-	.intro{
-		padding-left: 20%;
-	}
-} */
 .link{
 	font-weight: 700;
 	font-size: 16px;
@@ -75,59 +67,29 @@ img{
 	color: #152934;
 }
 /* HEADER */
-.header_container{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	justify-content: space-between;
-	padding-top: 20px;
-}
-.header{
+header{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-}
-#menu{
-	display: none;
-}
-.button{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: #fff;
-	cursor: pointer;
-	/* z-index: 1; */
-	/* margin-left: 800px; */
-	transition: 0.5s;
+	justify-content: flex-end;
+	padding-top: 20px;
+	z-index: 4;
+	transition: .2s linear;
+	padding-bottom: 10px;
 }
-.button_line{
-	display: block;
-	width: 30px;
-	height: 3px;
-	border-radius: 5px;
-	background: #000;
-	margin: 2px 0;
+.header_active{
+	background: rgba(130, 139, 115, 0.893);
+	
 }
-.m_menu{
-	max-height: 0;
-	font-size: 0;
-	overflow: hidden;
+.main__nav{
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	transform: translateX(0%);
-	transition: 0.5s all;
 }
-.menu_link{
-	display: block;
+.nav__links a{
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -135,22 +97,73 @@ img{
 	line-height: 24px;
 	text-align: center;
 }
-
-#menu:checked ~ .m_menu{
-	max-height: 200px;
-	font-size: 16px;
-	/* padding: 10px 190px 1px 1px;
-	margin: 90px 180px 20px 100px; */
+.nav__links a:hover, .nav__links a:focus{
+	opacity: .6;
+}
+.burger{
+	width: 40px;
 	height: 40px;
-	padding: 0 4px 0 8px;
-	background: rgba(225, 229, 224, 0.893);
+	position: relative;
+	right: 10px;
+	display: block;
+	cursor: pointer;
+	z-index: 2;
+}
+.line{
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	border-radius: 5px;
+	background: #000;
+	/* margin: 5px 0; */
+	top: 50%;
+	transition: all 0.5s;
+	transform: translate(-50%, -50%);
+}
+.burger .line:nth-of-type(2){
+	top: calc(50% - 8px);
+}
+.burger .line:nth-of-type(3){
+	top: calc(50% + 8px);
+}
+@media screen and (max-width: 1024px){
+	.nav__links{
+		width: 65%;
+	}
+}
+.nav__links{
+	position: fixed;
+	right: 5px;
+	height: 35vh;
+	top: 2vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 35px;
+	padding-left: 10px;
+	width: 20%;
 	border-radius:  10px 10px 10px 10px;
+	background-color: rgba(225, 229, 224, 0.893);
+	transform: translateX(105%);
+	transition: all .8s;
 }
-.menu_link:hover, .menu_link :focus, .menu_link :active{
-	opacity: .5;
+.nav__links .li{
+	list-style-type: none;
+	padding-bottom: 35px;
 }
-#menu:checked ~ .button{
+.nav__links._active{
+	transform: translateX(0%);
+}
+.burger._active .line:nth-of-type(1){
 	display: none;
+}
+.burger._active .line:nth-of-type(2){
+	top: 50%;
+  	transform: translate(-50%, 0%) rotate(45deg);
+}
+.burger._active .line:nth-of-type(3){
+	top: 50%;
+  	transform: translate(-50%, 0%) rotate(-45deg);
 }
 /* HEADER */
 
@@ -288,6 +301,45 @@ mark{
 hr{
 	margin-top: -300px;
 }
+@media (max-width: 800px) {
+	.small_comment{
+		margin-top: 200px;
+		margin-bottom: 18px;
+	}
+	.strategy_title{
+		width: 50%;
+	}
+	.subtitle{
+		width: 50%;
+		height: 80%;
+	}
+	.comment_1_wrap{
+		width: 50%;
+		height: 250px;
+		transform: translateY(-195%);
+	}
+	.comment{
+		font-size: 16px;
+		line-height: 28px;
+		width: 90%;
+		padding: 10px 2px 0 40px;
+	}
+	.user_1{
+		padding: 5px 5px 0 5px;
+	}
+	.name_user{
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 2px;
+	}
+	.description_user{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	hr{
+		margin-top: -150px;
+	}
+}
  /* first comment */
 
  /* third block */
@@ -404,8 +456,6 @@ hr{
  .com__4{
 	 height: 280px;
  }
-
- 
  .title_3{
 	width: 450px;
 }
