@@ -98,7 +98,7 @@ header{
 	text-align: center;
 }
 .nav__links a:hover, .nav__links a:focus{
-	opacity: .6;
+	color: #FFD723;
 }
 .burger{
 	width: 40px;
