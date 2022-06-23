@@ -25,8 +25,6 @@
 
 ![6th Screen](https://github.com/Kartiina/market/blob/master/ScreenShots/Footer.png "")
 Для футера были использованы списки и иконки социальных сетей с помощью Font Awesome.
-#
-
 
 ## tnx for your attention!👻
 
